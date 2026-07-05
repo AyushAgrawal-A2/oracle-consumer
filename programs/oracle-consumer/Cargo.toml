@@ -1,0 +1,27 @@
+[package]
+name = "oracle-consumer"
+version = "0.1.0"
+edition.workspace = true
+rust-version.workspace = true
+description = "Created with Anchor"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "oracle_consumer"
+
+[dependencies]
+anchor-lang = "1.1.2"
+
+[features]
+default = []
+anchor-debug = []
+cpi = ["no-entrypoint"]
+custom-heap = []
+custom-panic = []
+idl-build = ["anchor-lang/idl-build"]
+no-entrypoint = []
+no-log-ix-name = []
+
+[lints.rust.unexpected_cfgs]
+level = "warn"
+check-cfg = ['cfg(target_os, values("solana"))']

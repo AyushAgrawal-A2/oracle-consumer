@@ -11,6 +11,7 @@ name = "oracle_consumer"
 
 [dependencies]
 anchor-lang = "1.1.2"
+pyth-solana-receiver-sdk = "=2.0.0"
 
 [features]
 default = []

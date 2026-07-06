@@ -1,14 +1,16 @@
 pub mod constants;
 pub mod error;
+pub mod event;
 pub mod instructions;
-pub mod state;
+pub mod oracle;
 
 use anchor_lang::prelude::*;
 
 pub use constants::*;
 pub use error::*;
+pub use event::*;
 pub use instructions::*;
-pub use state::*;
+pub use oracle::*;
 
 declare_id!("GujZcMQix2ctpPHstodSJMDbmdw6zcPmhFEpQJAWFvUX");
 
